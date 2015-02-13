@@ -1,5 +1,6 @@
 ---
-title: "Reverse flower beauty the whole world...."
+title: "Reverse flower beauty the nodejs world...."
+category: "/about/"
 ---
 
 <!doctype html>
@@ -26,12 +27,14 @@ title: "Reverse flower beauty the whole world...."
         <article>
           <ul class="list-group">
             {% for post in site.posts %}
-              <li class="list-group-item">
-                <h4>
-                  <a href="{{ post.url }}">{{ post.title }}</a>
-                </h4>
-                <p>{{ post.excerpt }}</p>
-              </li>
+              {% if post.category == '/about/' %}
+                <li class="list-group-item">
+                  <h4>
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                  </h4>
+                  <p>{{ post.excerpt }}</p>
+                </li>
+              {% endif %}
             {% endfor %}
           </ul>
         </article>
@@ -41,5 +44,7 @@ title: "Reverse flower beauty the whole world...."
         <div id="qrcode"></div>
       </div>
     </div>
+    
+    {% include footer.html %}
   </body>
 </html>

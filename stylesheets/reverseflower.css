@@ -1,0 +1,30 @@
+.navbar {
+	border-radius: 0;
+}
+
+.list-group-item {
+	margin-bottom: 15px;
+}
+
+.text-info a {
+	color: rgb(52, 152, 219);
+}
+.navbar {
+	margin-bottom: 1px;
+}
+article.content {
+	margin-bottom: 25px;
+}
+
+.bg-about {
+	background-image: url('/images/bg.jpg');
+}
+
+.highlight pre {
+	margin: 0 0;
+}
+
+footer {
+	background-color: rgba(0, 0, 0, 0);
+	color: rgba(0, 0, 0, 1);
+}
